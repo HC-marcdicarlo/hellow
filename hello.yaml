@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    message: "Hello world"
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "{{ message }}"
